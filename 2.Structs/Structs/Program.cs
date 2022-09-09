@@ -14,6 +14,7 @@ public readonly struct Coordinate
         X = 0;
         Y = 0;
     }
+    // init keyword allows read-only structure properties to be set when constructed
     public int X { get; init; }
     public int Y { get; init; }
 }
