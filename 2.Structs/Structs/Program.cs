@@ -2,11 +2,13 @@
 Coordinate c = new Coordinate();
 Coordinate d = new Coordinate { X = 12, Y = 42 };
 Coordinate cChange = c with { X = 13, Y = 43 };
-Console.WriteLine(c);
+Console.WriteLine($"{c.X}, {c.Y}");
+Console.WriteLine($"{d.X}, {d.Y}");
+Console.WriteLine($"{cChange.X}, {cChange.Y}");
 
 public readonly struct Coordinate
 {
-    //Default constructor now allowed in C# 10
+    //Default constructor is now allowed in C# 10
     public Coordinate()
     {
         X = 0;
